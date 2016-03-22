@@ -9,7 +9,7 @@ module.exports = {
     attributes: {
         /* LOCAL ATTRIBUTES */
         birthday: {
-            type: 'date',
+            type: 'datetime',
             required: true
         },
         firstName: {
