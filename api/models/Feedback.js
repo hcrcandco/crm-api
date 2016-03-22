@@ -6,9 +6,19 @@
  */
 
 module.exports = {
-
-  attributes: {
-
-  }
+    attributes: {
+        /* LOCAL ATTRIBUTES */
+        isSatisfied: {
+            type: 'boolean',
+            defaultsTo: true
+        },
+        message: {
+            type: 'text'
+        },
+        /* FOREIGN ATTRIBUTES */
+        customer: {
+            model: 'customer',
+            required: true
+        }
+    }
 };
-

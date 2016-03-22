@@ -6,9 +6,31 @@
  */
 
 module.exports = {
-
-  attributes: {
-
-  }
+    attributes: {
+        /* LOCAL ATTRIBUTES */
+        birthday: {
+            type: 'date',
+            required: true
+        },
+        firstName: {
+            type: 'string'
+        },
+        isDND: {
+            type: 'boolean',
+            defaultsTo: false
+        },
+        lastName: {
+            type: 'string'
+        },
+        phone: {
+            type: 'string',
+            required: true,
+            unique: true
+        },
+        /* COLLECTIONS */
+        feedbacks: {
+            collection: 'feedback',
+            via: 'customer'
+        }
+    }
 };
-
